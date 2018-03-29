@@ -1,0 +1,73 @@
+/*Backgroud*/
+body {
+  background-image: url("../img/background.jpeg");
+  background-size: cover;
+  background-color: #94fbab;
+}
+
+/*Heading and Subtitle*/
+.heading {
+  color: #a9fff7;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 40px;
+  text-align: center;
+  color: #a9fff7;
+  text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+               0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+               0 0 40px #A5F1FF;
+}
+
+/*Flashcards*/
+.stage {
+  -webkit-perspective: 100;
+}
+
+.flashcard {
+  height: 100px;
+  width: 200px;
+  margin: 3rem 1rem 3rem 1rem;
+  border-radius: 15px;
+  -webkit-transform-style: preserve-3d;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.flipped,
+.back {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+
+.front {
+  height: 100px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px #bcb6ff;
+  background-color: #b8e1ff;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+
+.back {
+
+  height: 100px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: -15px -15px 15px #b8e1ff;
+  background-color: #bcb6ff;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+
+.front p,
+.back p {
+  color: black;
+  margin-top: 1rem;
+  font-size: 1em;
+  text-align: center;
+}
